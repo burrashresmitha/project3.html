@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        /* Basic styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .product-info {
+            flex: 1;
+            padding: 20px;
+        }
+        .product-img {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+        .product-img img {
+            max-width: 100%;
+            height: auto;
+        }
+        .cta {
+            text-align: center;
+            margin-top: 20px;
+        }
+        button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* Responsive design */
+        @media screen and (max-width: 768px) {
+            .product {
+                flex-direction: column;
+            }
+            .product-info, .product-img {
+                flex: 1;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>E-commerce Product Page</h1>
+    </header>
+
+    <div class="container">
+        <nav>
+            <a href="#">Home</a> | 
+            <a href="#">Products</a> | 
+            <a href="#">Contact</a>
+        </nav>
+
+        <div class="product">
+            <div class="product-info">
+                <h2>Product Name</h2>
+                <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p>Price: $XX.XX</p>
+                <div class="cta">
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+            <div class="product-img">
+                <img src="product-image.jpg" alt="Product Image">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 E-commerce Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
